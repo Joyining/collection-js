@@ -3,12 +3,24 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/collection-js.umd.js",
+  "module": "./dist/collection-js.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/collection-js.es.js",
+      "require": "./dist/collection-js.umd.js"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@types/node": "^18.7.21",
     "typescript": "^4.6.4",
     "vite": "^3.1.0"
   }
