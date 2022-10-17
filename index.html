@@ -15,9 +15,9 @@
     </script> -->
 
     <!-- Test ES module -->
-    <!-- <script type="module">
-      import { hello } from '/dist/collection-js.es.js';
-      hello();
-    </script> -->
+    <script type="module">
+      import modules from '/dist/collection-js.es.js';
+      console.log(modules.filter([1, 2, 3, 4, 5], (v) => v > 2))
+    </script>
   </body>
 </html>

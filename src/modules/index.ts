@@ -4,7 +4,8 @@ import find from './find';
 import reject from './reject'; 
 import some from './some';
 import forEach from './forEach'; 
-import every from './every'; 
+import every from './every';  
+import reduce from './reduce'; 
 
 export {
   map,
@@ -14,4 +15,5 @@ export {
   some,
   forEach,
   every,
+  reduce,
 };
