@@ -60,8 +60,15 @@ class Collection {
     return this.items[index];
   }
 
-  includes(callable: Function) {
-    return this.some(callable);
+  includes(value: any) {
+    let result = false;
+    for (let i = 0; i < this.items.length; i++) {
+      if (this.items[i] === value) {
+        result = true;
+        break;
+      }
+    }
+    return result;
   }
 
   toArray() {

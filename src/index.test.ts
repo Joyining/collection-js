@@ -126,7 +126,7 @@ test('nth', () => {
 
 test('includes', () => {
   const actual = collect([1, 2, 3, 4, 5])
-    .includes((v: number) => v > 2);
+    .includes(2);
   const expected = true;
 
   expect(actual).toStrictEqual(expected);
